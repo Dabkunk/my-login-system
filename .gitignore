@@ -1,5 +1,8 @@
 # .gitignore
-/config/database.php       # If you store DB credentials here
+/config/db.php       # If you store DB credentials here
 /vendor/
 *.log
 .env
+.DS_Store
+.idea/
+.vscode/
