@@ -1,0 +1,5 @@
+# .gitignore
+/config/database.php       # If you store DB credentials here
+/vendor/
+*.log
+.env
