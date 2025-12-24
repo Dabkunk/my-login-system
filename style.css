@@ -1,3 +1,11 @@
 body{
-    background-image: url();
+    background-image: url("Backgound.png");
+    background-attachment: fixed;
+    background-position: center;
+}
+h1{
+    color: ghostwhite;
+}
+h2{
+    color: ghostwhite;
 }
