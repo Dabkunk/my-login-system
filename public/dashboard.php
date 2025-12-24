@@ -1,3 +1,12 @@
-<?php require_once '../includes/auth.php'; ?>
-<h1>Welcome, <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
-<a href="../logout.php">Logout</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1><?php echo 'MY MAIN PAGE'; ?></h1>
+    <a href="../public/index.php">My game page</a>
+    <h2>COMING SOON</h2>
+</body>
+</html>

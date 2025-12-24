@@ -2,11 +2,14 @@
 
 $env = parse_ini_file(__DIR__ . '/../.env');
 
-$conn = new mysqli(
-    $env['DB_HOST'],
+$conn = new PDO(
+    "mysql:host={$env['DB_HOST']};dbname={$env['DB_NAME']};charset=utf8mb4",
     $env['DB_USER'],
     $env['DB_PASS'],
-    $env['DB_NAME']
+    [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    ]
 );
 
 //check connection
