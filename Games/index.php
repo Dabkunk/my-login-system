@@ -14,9 +14,9 @@ require_once '../config/db.php';
 </head>
 <body>
     <h1>Welcome, <?= htmlspecialchars($_SESSION['username'] ?? 'guest'); ?>!</h1>
-    <a href="../public/register.php"><?php echo 'Sign in <br />';?></a> 
-    <a href="../public/login.php"><?php echo 'log in <br />';?></a>
-    <a href="../logout.php"><?php echo 'log out <br />';?></a>
-    <a href="../public/dashboard.php">back to main page</a>
+    <a href="../Games/register.php"><?php echo 'Sign in <br />';?></a> 
+    <a href="../Games/login.php"><?php echo 'log in <br />';?></a>
+    <a href="../Games/logout.php"><?php echo 'log out <br />';?></a>
+    <a href="../index.html">back to main page</a>
 </body>
 </html>
